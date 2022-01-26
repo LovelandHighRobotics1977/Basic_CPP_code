@@ -1,0 +1,578 @@
+See file:///C:/Users/jec71b99/Documents/2022%20FRC%20C++%20robot%20code/build/tmp/compileFrcUserProgramDebugExecutableFrcUserProgramCpp/output.txt for all output for compileFrcUserProgramDebugExecutableFrcUserProgramCpp.
+compiling Robot.cpp failed.
+C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp: In member function 'virtual void Robot::AutonomousPeriodic()':
+C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:18:18: error: no match for 'operator<' (operand types are 'units::time::second_t {aka units::unit_t<units::unit<std::ratio<1>, units::base_unit<std::ratio<0, 1>, std::ratio<0, 1>, std::ratio<1> > > >}' and 'double')
+   if(timer.Get() < .73){
+      ~~~~~~~~~~~~^~~~~
+In file included from C:\Users\jec71b99\.gradle\caches\transforms-3\a9434eb4c6f89ebba955d60fea0deea2\transformed\wpimath-cpp-2022.1.1-headers/units/angle.h:29:0,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\a9434eb4c6f89ebba955d60fea0deea2\transformed\wpimath-cpp-2022.1.1-headers/units/math.h:31,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\178114eb00f372730a0b1c89d5ebb019\transformed\wpilibc-cpp-2022.1.1-headers/frc/TimedRobot.h:12,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\include/Robot.h:7,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:5:
+C:\Users\jec71b99\.gradle\caches\transforms-3\a9434eb4c6f89ebba955d60fea0deea2\transformed\wpimath-cpp-2022.1.1-headers/units/base.h:2031:25: note: candidate: template<class UnitsRhs, class Ty, template<class> class NlsRhs> constexpr bool units::unit_t<Units, T, NonLinearScale>::operator<(const units::unit_t<UnitsRhs, Ty, NlsRhs>&) const [with UnitsRhs = UnitsRhs; Ty = Ty; NlsRhs = NlsRhs; Units = units::unit<std::ratio<1>, units::base_unit<std::ratio<0, 1>, std::ratio<0, 1>, std::ratio<1> > >; T = double; NonLinearScale = units::linear_scale]
+   inline constexpr bool operator<(const unit_t<UnitsRhs, Ty, NlsRhs>& rhs) const noexcept
+                         ^~~~~~~~
+C:\Users\jec71b99\.gradle\caches\transforms-3\a9434eb4c6f89ebba955d60fea0deea2\transformed\wpimath-cpp-2022.1.1-headers/units/base.h:2031:25: note:   template argument deduction/substitution failed:
+C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:18:20: note:   mismatched types 'const units::unit_t<UnitsRhs, Ty, NlsRhs>' and 'double'
+   if(timer.Get() < .73){
+                    ^~~
+In file included from C:\Users\jec71b99\.gradle\caches\transforms-3\a9434eb4c6f89ebba955d60fea0deea2\transformed\wpimath-cpp-2022.1.1-headers/units/angle.h:29:0,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\a9434eb4c6f89ebba955d60fea0deea2\transformed\wpimath-cpp-2022.1.1-headers/units/math.h:31,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\178114eb00f372730a0b1c89d5ebb019\transformed\wpilibc-cpp-2022.1.1-headers/frc/TimedRobot.h:12,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\include/Robot.h:7,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:5:
+C:\Users\jec71b99\.gradle\caches\transforms-3\a9434eb4c6f89ebba955d60fea0deea2\transformed\wpimath-cpp-2022.1.1-headers/units/base.h:2773:17: note: candidate: template<class Units, class> constexpr bool units::operator<(const Units&, double)
+  constexpr bool operator<(const Units& lhs, const UNIT_LIB_DEFAULT_TYPE rhs) noexcept
+                 ^~~~~~~~
+C:\Users\jec71b99\.gradle\caches\transforms-3\a9434eb4c6f89ebba955d60fea0deea2\transformed\wpimath-cpp-2022.1.1-headers/units/base.h:2773:17: note:   template argument deduction/substitution failed:
+C:\Users\jec71b99\.gradle\caches\transforms-3\a9434eb4c6f89ebba955d60fea0deea2\transformed\wpimath-cpp-2022.1.1-headers/units/base.h:2767:17: note: candidate: template<class Units, class> constexpr bool units::operator<(double, const Units&)
+  constexpr bool operator<(const UNIT_LIB_DEFAULT_TYPE lhs, const Units& rhs) noexcept
+                 ^~~~~~~~
+C:\Users\jec71b99\.gradle\caches\transforms-3\a9434eb4c6f89ebba955d60fea0deea2\transformed\wpimath-cpp-2022.1.1-headers/units/base.h:2767:17: note:   template argument deduction/substitution failed:
+In file included from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/deque:64:0,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\0969a7da5c56d45ec6e08663af82ad1a\transformed\cci-5.20.2-headers/ctre/phoenix/string_util/string_util.h:5,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\0969a7da5c56d45ec6e08663af82ad1a\transformed\cci-5.20.2-headers/ctre/phoenix/motorcontrol/SupplyCurrentLimitConfiguration.h:5,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\31120157849b9a90bbad19fe4d028ef5\transformed\api-cpp-5.20.2-headers/ctre/phoenix/motorcontrol/IMotorControllerEnhanced.h:10,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\31120157849b9a90bbad19fe4d028ef5\transformed\api-cpp-5.20.2-headers/ctre/phoenix/motorcontrol/can/BaseTalon.h:8,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\31120157849b9a90bbad19fe4d028ef5\transformed\api-cpp-5.20.2-headers/ctre/phoenix/motorcontrol/can/TalonFX.h:7,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\31120157849b9a90bbad19fe4d028ef5\transformed\api-cpp-5.20.2-headers/ctre/Phoenix.h:21,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\include/Robot.h:10,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:5:
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/stl_deque.h:2276:5: note: candidate: template<class _Tp, class _Alloc> bool std::operator<(const std::deque<_Tp, _Alloc>&, const std::deque<_Tp, _Alloc>&)
+     operator<(const deque<_Tp, _Alloc>& __x,
+     ^~~~~~~~
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/stl_deque.h:2276:5: note:   template argument deduction/substitution failed:
+C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:18:20: note:   'units::time::second_t {aka units::unit_t<units::unit<std::ratio<1>, units::base_unit<std::ratio<0, 1>, std::ratio<0, 1>, std::ratio<1> > > >}' is not derived from 'const std::deque<_Tp, _Alloc>'
+   if(timer.Get() < .73){
+                    ^~~
+In file included from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/deque:64:0,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\0969a7da5c56d45ec6e08663af82ad1a\transformed\cci-5.20.2-headers/ctre/phoenix/string_util/string_util.h:5,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\0969a7da5c56d45ec6e08663af82ad1a\transformed\cci-5.20.2-headers/ctre/phoenix/motorcontrol/SupplyCurrentLimitConfiguration.h:5,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\31120157849b9a90bbad19fe4d028ef5\transformed\api-cpp-5.20.2-headers/ctre/phoenix/motorcontrol/IMotorControllerEnhanced.h:10,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\31120157849b9a90bbad19fe4d028ef5\transformed\api-cpp-5.20.2-headers/ctre/phoenix/motorcontrol/can/BaseTalon.h:8,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\31120157849b9a90bbad19fe4d028ef5\transformed\api-cpp-5.20.2-headers/ctre/phoenix/motorcontrol/can/TalonFX.h:7,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\31120157849b9a90bbad19fe4d028ef5\transformed\api-cpp-5.20.2-headers/ctre/Phoenix.h:21,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\include/Robot.h:10,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:5:
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/stl_deque.h:301:5: note: candidate: template<class _Tp, class _RefL, class _PtrL, class _RefR, class _PtrR> bool std::operator<(const std::_Deque_iterator<_Tp, _Ref, _Ptr>&, const std::_Deque_iterator<_Tp, _RefR, _PtrR>&)
+     operator<(const _Deque_iterator<_Tp, _RefL, _PtrL>& __x,
+     ^~~~~~~~
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/stl_deque.h:301:5: note:   template argument deduction/substitution failed:
+C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:18:20: note:   'units::time::second_t {aka units::unit_t<units::unit<std::ratio<1>, units::base_unit<std::ratio<0, 1>, std::ratio<0, 1>, std::ratio<1> > > >}' is not derived from 'const std::_Deque_iterator<_Tp, _Ref, _Ptr>'
+   if(timer.Get() < .73){
+                    ^~~
+In file included from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/deque:64:0,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\0969a7da5c56d45ec6e08663af82ad1a\transformed\cci-5.20.2-headers/ctre/phoenix/string_util/string_util.h:5,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\0969a7da5c56d45ec6e08663af82ad1a\transformed\cci-5.20.2-headers/ctre/phoenix/motorcontrol/SupplyCurrentLimitConfiguration.h:5,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\31120157849b9a90bbad19fe4d028ef5\transformed\api-cpp-5.20.2-headers/ctre/phoenix/motorcontrol/IMotorControllerEnhanced.h:10,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\31120157849b9a90bbad19fe4d028ef5\transformed\api-cpp-5.20.2-headers/ctre/phoenix/motorcontrol/can/BaseTalon.h:8,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\31120157849b9a90bbad19fe4d028ef5\transformed\api-cpp-5.20.2-headers/ctre/phoenix/motorcontrol/can/TalonFX.h:7,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\31120157849b9a90bbad19fe4d028ef5\transformed\api-cpp-5.20.2-headers/ctre/Phoenix.h:21,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\include/Robot.h:10,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:5:
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/stl_deque.h:293:5: note: candidate: template<class _Tp, class _Ref, class _Ptr> bool std::operator<(const std::_Deque_iterator<_Tp, _Ref, _Ptr>&, const std::_Deque_iterator<_Tp, _Ref, _Ptr>&)
+     operator<(const _Deque_iterator<_Tp, _Ref, _Ptr>& __x,
+     ^~~~~~~~
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/stl_deque.h:293:5: note:   template argument deduction/substitution failed:
+C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:18:20: note:   'units::time::second_t {aka units::unit_t<units::unit<std::ratio<1>, units::base_unit<std::ratio<0, 1>, std::ratio<0, 1>, std::ratio<1> > > >}' is not derived from 'const std::_Deque_iterator<_Tp, _Ref, _Ptr>'
+   if(timer.Get() < .73){
+                    ^~~
+In file included from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/set:62:0,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\0969a7da5c56d45ec6e08663af82ad1a\transformed\cci-5.20.2-headers/ctre/phoenix/cci/CANdle_CCI.h:5,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\31120157849b9a90bbad19fe4d028ef5\transformed\api-cpp-5.20.2-headers/ctre/phoenix/led/CANdle.h:13,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\31120157849b9a90bbad19fe4d028ef5\transformed\api-cpp-5.20.2-headers/ctre/Phoenix.h:17,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\include/Robot.h:10,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:5:
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/stl_multiset.h:913:5: note: candidate: template<class _Key, class _Compare, class _Alloc> bool std::operator<(const std::multiset<_Key, _Compare, _Alloc>&, const std::multiset<_Key, _Compare, _Alloc>&)
+     operator<(const multiset<_Key, _Compare, _Alloc>& __x,
+     ^~~~~~~~
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/stl_multiset.h:913:5: note:   template argument deduction/substitution failed:
+C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:18:20: note:   'units::time::second_t {aka units::unit_t<units::unit<std::ratio<1>, units::base_unit<std::ratio<0, 1>, std::ratio<0, 1>, std::ratio<1> > > >}' is not derived from 'const std::multiset<_Key, _Compare, _Alloc>'
+   if(timer.Get() < .73){
+                    ^~~
+In file included from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/set:61:0,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\0969a7da5c56d45ec6e08663af82ad1a\transformed\cci-5.20.2-headers/ctre/phoenix/cci/CANdle_CCI.h:5,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\31120157849b9a90bbad19fe4d028ef5\transformed\api-cpp-5.20.2-headers/ctre/phoenix/led/CANdle.h:13,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\31120157849b9a90bbad19fe4d028ef5\transformed\api-cpp-5.20.2-headers/ctre/Phoenix.h:17,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\include/Robot.h:10,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:5:
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/stl_set.h:930:5: note: candidate: template<class _Key, class _Compare, class _Alloc> bool std::operator<(const std::set<_Key, _Compare, _Alloc>&, const std::set<_Key, _Compare, _Alloc>&)
+     operator<(const set<_Key, _Compare, _Alloc>& __x,
+     ^~~~~~~~
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/stl_set.h:930:5: note:   template argument deduction/substitution failed:
+C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:18:20: note:   'units::time::second_t {aka units::unit_t<units::unit<std::ratio<1>, units::base_unit<std::ratio<0, 1>, std::ratio<0, 1>, std::ratio<1> > > >}' is not derived from 'const std::set<_Key, _Compare, _Alloc>'
+   if(timer.Get() < .73){
+                    ^~~
+In file included from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/set:60:0,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\0969a7da5c56d45ec6e08663af82ad1a\transformed\cci-5.20.2-headers/ctre/phoenix/cci/CANdle_CCI.h:5,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\31120157849b9a90bbad19fe4d028ef5\transformed\api-cpp-5.20.2-headers/ctre/phoenix/led/CANdle.h:13,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\31120157849b9a90bbad19fe4d028ef5\transformed\api-cpp-5.20.2-headers/ctre/Phoenix.h:17,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\include/Robot.h:10,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:5:
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/stl_tree.h:1543:5: note: candidate: template<class _Key, class _Val, class _KeyOfValue, class _Compare, class _Alloc> bool std::operator<(const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&, const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&)
+     operator<(const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __x,
+     ^~~~~~~~
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/stl_tree.h:1543:5: note:   template argument deduction/substitution failed:
+C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:18:20: note:   'units::time::second_t {aka units::unit_t<units::unit<std::ratio<1>, units::base_unit<std::ratio<0, 1>, std::ratio<0, 1>, std::ratio<1> > > >}' is not derived from 'const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>'
+   if(timer.Get() < .73){
+                    ^~~
+In file included from C:\Users\jec71b99\.gradle\caches\transforms-3\178114eb00f372730a0b1c89d5ebb019\transformed\wpilibc-cpp-2022.1.1-headers/frc/RobotBase.h:8:0,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\178114eb00f372730a0b1c89d5ebb019\transformed\wpilibc-cpp-2022.1.1-headers/frc/IterativeRobotBase.h:10,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\178114eb00f372730a0b1c89d5ebb019\transformed\wpilibc-cpp-2022.1.1-headers/frc/TimedRobot.h:17,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\include/Robot.h:7,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:5:
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/thread:284:3: note: candidate: bool std::operator<(std::thread::id, std::thread::id)
+   operator<(thread::id __x, thread::id __y) noexcept
+   ^~~~~~~~
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/thread:284:3: note:   no known conversion for argument 1 from 'units::time::second_t {aka units::unit_t<units::unit<std::ratio<1>, units::base_unit<std::ratio<0, 1>, std::ratio<0, 1>, std::ratio<1> > > >}' to 'std::thread::id'
+In file included from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/memory:81:0,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\fea46de20e2869b0be986ea81684d897\transformed\wpiutil-cpp-2022.1.1-headers/fmt/format.h:39,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\a9434eb4c6f89ebba955d60fea0deea2\transformed\wpimath-cpp-2022.1.1-headers/units/base.h:84,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\a9434eb4c6f89ebba955d60fea0deea2\transformed\wpimath-cpp-2022.1.1-headers/units/angle.h:29,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\a9434eb4c6f89ebba955d60fea0deea2\transformed\wpimath-cpp-2022.1.1-headers/units/math.h:31,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\178114eb00f372730a0b1c89d5ebb019\transformed\wpilibc-cpp-2022.1.1-headers/frc/TimedRobot.h:12,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\include/Robot.h:7,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:5:
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/shared_ptr.h:416:5: note: candidate: template<class _Tp> bool std::operator<(std::nullptr_t, const std::shared_ptr<_Tp>&)
+     operator<(nullptr_t, const shared_ptr<_Tp>& __a) noexcept
+     ^~~~~~~~
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/shared_ptr.h:416:5: note:   template argument deduction/substitution failed:
+C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:18:20: note:   mismatched types 'const std::shared_ptr<_Tp>' and 'double'
+   if(timer.Get() < .73){
+                    ^~~
+In file included from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/memory:81:0,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\fea46de20e2869b0be986ea81684d897\transformed\wpiutil-cpp-2022.1.1-headers/fmt/format.h:39,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\a9434eb4c6f89ebba955d60fea0deea2\transformed\wpimath-cpp-2022.1.1-headers/units/base.h:84,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\a9434eb4c6f89ebba955d60fea0deea2\transformed\wpimath-cpp-2022.1.1-headers/units/angle.h:29,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\a9434eb4c6f89ebba955d60fea0deea2\transformed\wpimath-cpp-2022.1.1-headers/units/math.h:31,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\178114eb00f372730a0b1c89d5ebb019\transformed\wpilibc-cpp-2022.1.1-headers/frc/TimedRobot.h:12,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\include/Robot.h:7,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:5:
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/shared_ptr.h:408:5: note: candidate: template<class _Tp> bool std::operator<(const std::shared_ptr<_Tp>&, std::nullptr_t)
+     operator<(const shared_ptr<_Tp>& __a, nullptr_t) noexcept
+     ^~~~~~~~
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/shared_ptr.h:408:5: note:   template argument deduction/substitution failed:
+C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:18:20: note:   'units::time::second_t {aka units::unit_t<units::unit<std::ratio<1>, units::base_unit<std::ratio<0, 1>, std::ratio<0, 1>, std::ratio<1> > > >}' is not derived from 'const std::shared_ptr<_Tp>'
+   if(timer.Get() < .73){
+                    ^~~
+In file included from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/memory:81:0,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\fea46de20e2869b0be986ea81684d897\transformed\wpiutil-cpp-2022.1.1-headers/fmt/format.h:39,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\a9434eb4c6f89ebba955d60fea0deea2\transformed\wpimath-cpp-2022.1.1-headers/units/base.h:84,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\a9434eb4c6f89ebba955d60fea0deea2\transformed\wpimath-cpp-2022.1.1-headers/units/angle.h:29,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\a9434eb4c6f89ebba955d60fea0deea2\transformed\wpimath-cpp-2022.1.1-headers/units/math.h:31,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\178114eb00f372730a0b1c89d5ebb019\transformed\wpilibc-cpp-2022.1.1-headers/frc/TimedRobot.h:12,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\include/Robot.h:7,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:5:
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/shared_ptr.h:398:5: note: candidate: template<class _Tp, class _Up> bool std::operator<(const std::shared_ptr<_Tp>&, const std::shared_ptr<_Up>&)
+     operator<(const shared_ptr<_Tp>& __a, const shared_ptr<_Up>& __b) noexcept
+     ^~~~~~~~
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/shared_ptr.h:398:5: note:   template argument deduction/substitution failed:
+C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:18:20: note:   'units::time::second_t {aka units::unit_t<units::unit<std::ratio<1>, units::base_unit<std::ratio<0, 1>, std::ratio<0, 1>, std::ratio<1> > > >}' is not derived from 'const std::shared_ptr<_Tp>'
+   if(timer.Get() < .73){
+                    ^~~
+In file included from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/shared_ptr.h:52:0,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/memory:81,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\fea46de20e2869b0be986ea81684d897\transformed\wpiutil-cpp-2022.1.1-headers/fmt/format.h:39,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\a9434eb4c6f89ebba955d60fea0deea2\transformed\wpimath-cpp-2022.1.1-headers/units/base.h:84,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\a9434eb4c6f89ebba955d60fea0deea2\transformed\wpimath-cpp-2022.1.1-headers/units/angle.h:29,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\a9434eb4c6f89ebba955d60fea0deea2\transformed\wpimath-cpp-2022.1.1-headers/units/math.h:31,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\178114eb00f372730a0b1c89d5ebb019\transformed\wpilibc-cpp-2022.1.1-headers/frc/TimedRobot.h:12,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\include/Robot.h:7,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:5:
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/shared_ptr_base.h:1460:5: note: candidate: template<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::operator<(std::nullptr_t, const std::__shared_ptr<_Tp, _Lp>&)
+     operator<(nullptr_t, const __shared_ptr<_Tp, _Lp>& __a) noexcept
+     ^~~~~~~~
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/shared_ptr_base.h:1460:5: note:   template argument deduction/substitution failed:
+C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:18:20: note:   mismatched types 'const std::__shared_ptr<_Tp, _Lp>' and 'double'
+   if(timer.Get() < .73){
+                    ^~~
+In file included from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/shared_ptr.h:52:0,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/memory:81,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\fea46de20e2869b0be986ea81684d897\transformed\wpiutil-cpp-2022.1.1-headers/fmt/format.h:39,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\a9434eb4c6f89ebba955d60fea0deea2\transformed\wpimath-cpp-2022.1.1-headers/units/base.h:84,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\a9434eb4c6f89ebba955d60fea0deea2\transformed\wpimath-cpp-2022.1.1-headers/units/angle.h:29,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\a9434eb4c6f89ebba955d60fea0deea2\transformed\wpimath-cpp-2022.1.1-headers/units/math.h:31,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\178114eb00f372730a0b1c89d5ebb019\transformed\wpilibc-cpp-2022.1.1-headers/frc/TimedRobot.h:12,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\include/Robot.h:7,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:5:
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/shared_ptr_base.h:1452:5: note: candidate: template<class _Tp, __gnu_cxx::_Lock_policy _Lp> bool std::operator<(const std::__shared_ptr<_Tp, _Lp>&, std::nullptr_t)
+     operator<(const __shared_ptr<_Tp, _Lp>& __a, nullptr_t) noexcept
+     ^~~~~~~~
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/shared_ptr_base.h:1452:5: note:   template argument deduction/substitution failed:
+C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:18:20: note:   'units::time::second_t {aka units::unit_t<units::unit<std::ratio<1>, units::base_unit<std::ratio<0, 1>, std::ratio<0, 1>, std::ratio<1> > > >}' is not derived from 'const std::__shared_ptr<_Tp, _Lp>'
+   if(timer.Get() < .73){
+                    ^~~
+In file included from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/shared_ptr.h:52:0,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/memory:81,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\fea46de20e2869b0be986ea81684d897\transformed\wpiutil-cpp-2022.1.1-headers/fmt/format.h:39,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\a9434eb4c6f89ebba955d60fea0deea2\transformed\wpimath-cpp-2022.1.1-headers/units/base.h:84,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\a9434eb4c6f89ebba955d60fea0deea2\transformed\wpimath-cpp-2022.1.1-headers/units/angle.h:29,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\a9434eb4c6f89ebba955d60fea0deea2\transformed\wpimath-cpp-2022.1.1-headers/units/math.h:31,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\178114eb00f372730a0b1c89d5ebb019\transformed\wpilibc-cpp-2022.1.1-headers/frc/TimedRobot.h:12,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\include/Robot.h:7,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:5:
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/shared_ptr_base.h:1441:5: note: candidate: template<class _Tp, class _Up, __gnu_cxx::_Lock_policy _Lp> bool std::operator<(const std::__shared_ptr<_Tp1, _Lp>&, const std::__shared_ptr<_Tp2, _Lp>&)
+     operator<(const __shared_ptr<_Tp, _Lp>& __a,
+     ^~~~~~~~
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/shared_ptr_base.h:1441:5: note:   template argument deduction/substitution failed:
+C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:18:20: note:   'units::time::second_t {aka units::unit_t<units::unit<std::ratio<1>, units::base_unit<std::ratio<0, 1>, std::ratio<0, 1>, std::ratio<1> > > >}' is not derived from 'const std::__shared_ptr<_Tp1, _Lp>'
+   if(timer.Get() < .73){
+                    ^~~
+In file included from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/locale_conv.h:41:0,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/locale:43,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\a9434eb4c6f89ebba955d60fea0deea2\transformed\wpimath-cpp-2022.1.1-headers/units/base.h:82,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\a9434eb4c6f89ebba955d60fea0deea2\transformed\wpimath-cpp-2022.1.1-headers/units/angle.h:29,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\a9434eb4c6f89ebba955d60fea0deea2\transformed\wpimath-cpp-2022.1.1-headers/units/math.h:31,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\178114eb00f372730a0b1c89d5ebb019\transformed\wpilibc-cpp-2022.1.1-headers/frc/TimedRobot.h:12,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\include/Robot.h:7,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:5:
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/unique_ptr.h:734:5: note: candidate: template<class _Tp, class _Dp> bool std::operator<(std::nullptr_t, const std::unique_ptr<_Tp, _Dp>&)
+     operator<(nullptr_t, const unique_ptr<_Tp, _Dp>& __x)
+     ^~~~~~~~
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/unique_ptr.h:734:5: note:   template argument deduction/substitution failed:
+C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:18:20: note:   mismatched types 'const std::unique_ptr<_Tp, _Dp>' and 'double'
+   if(timer.Get() < .73){
+                    ^~~
+In file included from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/locale_conv.h:41:0,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/locale:43,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\a9434eb4c6f89ebba955d60fea0deea2\transformed\wpimath-cpp-2022.1.1-headers/units/base.h:82,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\a9434eb4c6f89ebba955d60fea0deea2\transformed\wpimath-cpp-2022.1.1-headers/units/angle.h:29,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\a9434eb4c6f89ebba955d60fea0deea2\transformed\wpimath-cpp-2022.1.1-headers/units/math.h:31,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\178114eb00f372730a0b1c89d5ebb019\transformed\wpilibc-cpp-2022.1.1-headers/frc/TimedRobot.h:12,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\include/Robot.h:7,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:5:
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/unique_ptr.h:728:5: note: candidate: template<class _Tp, class _Dp> bool std::operator<(const std::unique_ptr<_Tp, _Dp>&, std::nullptr_t)
+     operator<(const unique_ptr<_Tp, _Dp>& __x, nullptr_t)
+     ^~~~~~~~
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/unique_ptr.h:728:5: note:   template argument deduction/substitution failed:
+C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:18:20: note:   'units::time::second_t {aka units::unit_t<units::unit<std::ratio<1>, units::base_unit<std::ratio<0, 1>, std::ratio<0, 1>, std::ratio<1> > > >}' is not derived from 'const std::unique_ptr<_Tp, _Dp>'
+   if(timer.Get() < .73){
+                    ^~~
+In file included from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/locale_conv.h:41:0,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/locale:43,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\a9434eb4c6f89ebba955d60fea0deea2\transformed\wpimath-cpp-2022.1.1-headers/units/base.h:82,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\a9434eb4c6f89ebba955d60fea0deea2\transformed\wpimath-cpp-2022.1.1-headers/units/angle.h:29,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\a9434eb4c6f89ebba955d60fea0deea2\transformed\wpimath-cpp-2022.1.1-headers/units/math.h:31,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\178114eb00f372730a0b1c89d5ebb019\transformed\wpilibc-cpp-2022.1.1-headers/frc/TimedRobot.h:12,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\include/Robot.h:7,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:5:
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/unique_ptr.h:717:5: note: candidate: template<class _Tp, class _Dp, class _Up, class _Ep> bool std::operator<(const std::unique_ptr<_Tp, _Dp>&, const std::unique_ptr<_Up, _Ep>&)
+     operator<(const unique_ptr<_Tp, _Dp>& __x,
+     ^~~~~~~~
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/unique_ptr.h:717:5: note:   template argument deduction/substitution failed:
+C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:18:20: note:   'units::time::second_t {aka units::unit_t<units::unit<std::ratio<1>, units::base_unit<std::ratio<0, 1>, std::ratio<0, 1>, std::ratio<1> > > >}' is not derived from 'const std::unique_ptr<_Tp, _Dp>'
+   if(timer.Get() < .73){
+                    ^~~
+In file included from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/ios_base.h:46:0,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/locale_facets.h:43,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/locale:40,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\a9434eb4c6f89ebba955d60fea0deea2\transformed\wpimath-cpp-2022.1.1-headers/units/base.h:82,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\a9434eb4c6f89ebba955d60fea0deea2\transformed\wpimath-cpp-2022.1.1-headers/units/angle.h:29,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\a9434eb4c6f89ebba955d60fea0deea2\transformed\wpimath-cpp-2022.1.1-headers/units/math.h:31,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\178114eb00f372730a0b1c89d5ebb019\transformed\wpilibc-cpp-2022.1.1-headers/frc/TimedRobot.h:12,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\include/Robot.h:7,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:5:
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/system_error:282:3: note: candidate: bool std::operator<(const std::error_condition&, const std::error_condition&)
+   operator<(const error_condition& __lhs,
+   ^~~~~~~~
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/system_error:282:3: note:   no known conversion for argument 1 from 'units::time::second_t {aka units::unit_t<units::unit<std::ratio<1>, units::base_unit<std::ratio<0, 1>, std::ratio<0, 1>, std::ratio<1> > > >}' to 'const std::error_condition&'
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/system_error:208:3: note: candidate: bool std::operator<(const std::error_code&, const std::error_code&)
+   operator<(const error_code& __lhs, const error_code& __rhs) noexcept
+   ^~~~~~~~
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/system_error:208:3: note:   no known conversion for argument 1 from 'units::time::second_t {aka units::unit_t<units::unit<std::ratio<1>, units::base_unit<std::ratio<0, 1>, std::ratio<0, 1>, std::ratio<1> > > >}' to 'const std::error_code&'
+In file included from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/vector:64:0,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/functional:61,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\178114eb00f372730a0b1c89d5ebb019\transformed\wpilibc-cpp-2022.1.1-headers/frc/TimedRobot.h:7,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\include/Robot.h:7,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:5:
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/stl_vector.h:1613:5: note: candidate: template<class _Tp, class _Alloc> bool std::operator<(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)
+     operator<(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+     ^~~~~~~~
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/stl_vector.h:1613:5: note:   template argument deduction/substitution failed:
+C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:18:20: note:   'units::time::second_t {aka units::unit_t<units::unit<std::ratio<1>, units::base_unit<std::ratio<0, 1>, std::ratio<0, 1>, std::ratio<1> > > >}' is not derived from 'const std::vector<_Tp, _Alloc>'
+   if(timer.Get() < .73){
+                    ^~~
+In file included from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/node_handle.h:39:0,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/hashtable.h:37,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/unordered_map:47,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/functional:60,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\178114eb00f372730a0b1c89d5ebb019\transformed\wpilibc-cpp-2022.1.1-headers/frc/TimedRobot.h:7,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\include/Robot.h:7,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:5:
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/optional:934:5: note: candidate: template<class _Tp, class _Up> constexpr std::__optional_relop_t<decltype ((declval<_Up>() < declval<_Tp>()))> std::operator<(const _Up&, const std::optional<_Tp>&)
+     operator<(const _Up& __lhs, const optional<_Tp>& __rhs)
+     ^~~~~~~~
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/optional:934:5: note:   template argument deduction/substitution failed:
+C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:18:20: note:   mismatched types 'const std::optional<_Tp>' and 'double'
+   if(timer.Get() < .73){
+                    ^~~
+In file included from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/node_handle.h:39:0,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/hashtable.h:37,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/unordered_map:47,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/functional:60,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\178114eb00f372730a0b1c89d5ebb019\transformed\wpilibc-cpp-2022.1.1-headers/frc/TimedRobot.h:7,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\include/Robot.h:7,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:5:
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/optional:928:5: note: candidate: template<class _Tp, class _Up> constexpr std::__optional_relop_t<decltype ((declval<_Tp>() < declval<_Up>()))> std::operator<(const std::optional<_Tp>&, const _Up&)
+     operator<(const optional<_Tp>& __lhs, const _Up& __rhs)
+     ^~~~~~~~
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/optional:928:5: note:   template argument deduction/substitution failed:
+C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:18:20: note:   'units::time::second_t {aka units::unit_t<units::unit<std::ratio<1>, units::base_unit<std::ratio<0, 1>, std::ratio<0, 1>, std::ratio<1> > > >}' is not derived from 'const std::optional<_Tp>'
+   if(timer.Get() < .73){
+                    ^~~
+In file included from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/node_handle.h:39:0,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/hashtable.h:37,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/unordered_map:47,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/functional:60,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\178114eb00f372730a0b1c89d5ebb019\transformed\wpilibc-cpp-2022.1.1-headers/frc/TimedRobot.h:7,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\include/Robot.h:7,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:5:
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/optional:868:5: note: candidate: template<class _Tp> constexpr bool std::operator<(std::nullopt_t, const std::optional<_Tp>&)
+     operator<(nullopt_t, const optional<_Tp>& __rhs) noexcept
+     ^~~~~~~~
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/optional:868:5: note:   template argument deduction/substitution failed:
+C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:18:20: note:   mismatched types 'const std::optional<_Tp>' and 'double'
+   if(timer.Get() < .73){
+                    ^~~
+In file included from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/node_handle.h:39:0,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/hashtable.h:37,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/unordered_map:47,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/functional:60,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\178114eb00f372730a0b1c89d5ebb019\transformed\wpilibc-cpp-2022.1.1-headers/frc/TimedRobot.h:7,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\include/Robot.h:7,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:5:
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/optional:863:5: note: candidate: template<class _Tp> constexpr bool std::operator<(const std::optional<_Tp>&, std::nullopt_t)
+     operator<(const optional<_Tp>& /* __lhs */, nullopt_t) noexcept
+     ^~~~~~~~
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/optional:863:5: note:   template argument deduction/substitution failed:
+C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:18:20: note:   'units::time::second_t {aka units::unit_t<units::unit<std::ratio<1>, units::base_unit<std::ratio<0, 1>, std::ratio<0, 1>, std::ratio<1> > > >}' is not derived from 'const std::optional<_Tp>'
+   if(timer.Get() < .73){
+                    ^~~
+In file included from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/node_handle.h:39:0,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/hashtable.h:37,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/unordered_map:47,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/functional:60,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\178114eb00f372730a0b1c89d5ebb019\transformed\wpilibc-cpp-2022.1.1-headers/frc/TimedRobot.h:7,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\include/Robot.h:7,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:5:
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/optional:810:5: note: candidate: template<class _Tp, class _Up> constexpr std::__optional_relop_t<decltype ((declval<_Tp>() < declval<_Up>()))> std::operator<(const std::optional<_Tp>&, const std::optional<_Up>&)
+     operator<(const optional<_Tp>& __lhs, const optional<_Up>& __rhs)
+     ^~~~~~~~
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/optional:810:5: note:   template argument deduction/substitution failed:
+C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:18:20: note:   'units::time::second_t {aka units::unit_t<units::unit<std::ratio<1>, units::base_unit<std::ratio<0, 1>, std::ratio<0, 1>, std::ratio<1> > > >}' is not derived from 'const std::optional<_Tp>'
+   if(timer.Get() < .73){
+                    ^~~
+In file included from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/functional:54:0,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\178114eb00f372730a0b1c89d5ebb019\transformed\wpilibc-cpp-2022.1.1-headers/frc/TimedRobot.h:7,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\include/Robot.h:7,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:5:
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/tuple:1410:5: note: candidate: template<class ... _TElements, class ... _UElements> constexpr bool std::operator<(const std::tuple<_Tps ...>&, const std::tuple<_Elements ...>&)
+     operator<(const tuple<_TElements...>& __t,
+     ^~~~~~~~
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/tuple:1410:5: note:   template argument deduction/substitution failed:
+C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:18:20: note:   'units::time::second_t {aka units::unit_t<units::unit<std::ratio<1>, units::base_unit<std::ratio<0, 1>, std::ratio<0, 1>, std::ratio<1> > > >}' is not derived from 'const std::tuple<_Tps ...>'
+   if(timer.Get() < .73){
+                    ^~~
+In file included from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/tuple:39:0,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/functional:54,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\178114eb00f372730a0b1c89d5ebb019\transformed\wpilibc-cpp-2022.1.1-headers/frc/TimedRobot.h:7,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\include/Robot.h:7,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:5:
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/array:262:5: note: candidate: template<class _Tp, unsigned int _Nm> bool std::operator<(const std::array<_Tp, _Nm>&, const std::array<_Tp, _Nm>&)
+     operator<(const array<_Tp, _Nm>& __a, const array<_Tp, _Nm>& __b)
+     ^~~~~~~~
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/array:262:5: note:   template argument deduction/substitution failed:
+C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:18:20: note:   'units::time::second_t {aka units::unit_t<units::unit<std::ratio<1>, units::base_unit<std::ratio<0, 1>, std::ratio<0, 1>, std::ratio<1> > > >}' is not derived from 'const std::array<_Tp, _Nm>'
+   if(timer.Get() < .73){
+                    ^~~
+In file included from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/string:52:0,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/stdexcept:39,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/array:39,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/tuple:39,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/functional:54,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\178114eb00f372730a0b1c89d5ebb019\transformed\wpilibc-cpp-2022.1.1-headers/frc/TimedRobot.h:7,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\include/Robot.h:7,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:5:
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/basic_string.h:6107:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<(const _CharT* __lhs,
+     ^~~~~~~~
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/basic_string.h:6107:5: note:   template argument deduction/substitution failed:
+C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:18:20: note:   mismatched types 'const _CharT*' and 'units::unit_t<units::unit<std::ratio<1>, units::base_unit<std::ratio<0, 1>, std::ratio<0, 1>, std::ratio<1> > > >'
+   if(timer.Get() < .73){
+                    ^~~
+In file included from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/string:52:0,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/stdexcept:39,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/array:39,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/tuple:39,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/functional:54,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\178114eb00f372730a0b1c89d5ebb019\transformed\wpilibc-cpp-2022.1.1-headers/frc/TimedRobot.h:7,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\include/Robot.h:7,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:5:
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/basic_string.h:6095:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^~~~~~~~
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/basic_string.h:6095:5: note:   template argument deduction/substitution failed:
+C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:18:20: note:   'units::time::second_t {aka units::unit_t<units::unit<std::ratio<1>, units::base_unit<std::ratio<0, 1>, std::ratio<0, 1>, std::ratio<1> > > >}' is not derived from 'const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>'
+   if(timer.Get() < .73){
+                    ^~~
+In file included from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/string:52:0,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/stdexcept:39,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/array:39,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/tuple:39,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/functional:54,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\178114eb00f372730a0b1c89d5ebb019\transformed\wpilibc-cpp-2022.1.1-headers/frc/TimedRobot.h:7,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\include/Robot.h:7,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:5:
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/basic_string.h:6082:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator<(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^~~~~~~~
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/basic_string.h:6082:5: note:   template argument deduction/substitution failed:
+C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:18:20: note:   'units::time::second_t {aka units::unit_t<units::unit<std::ratio<1>, units::base_unit<std::ratio<0, 1>, std::ratio<0, 1>, std::ratio<1> > > >}' is not derived from 'const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>'
+   if(timer.Get() < .73){
+                    ^~~
+In file included from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/basic_string.h:48:0,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/string:52,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/stdexcept:39,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/array:39,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/tuple:39,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/functional:54,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\178114eb00f372730a0b1c89d5ebb019\transformed\wpilibc-cpp-2022.1.1-headers/frc/TimedRobot.h:7,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\include/Robot.h:7,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:5:
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/string_view:498:5: note: candidate: template<class _CharT, class _Traits> constexpr bool std::operator<(std::__detail::__idt<std::basic_string_view<_CharT, _Traits> >, std::basic_string_view<_CharT, _Traits>)
+     operator< (__detail::__idt<basic_string_view<_CharT, _Traits>> __x,
+     ^~~~~~~~
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/string_view:498:5: note:   template argument deduction/substitution failed:
+C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:18:20: note:   mismatched types 'std::basic_string_view<_CharT, _Traits>' and 'double'
+   if(timer.Get() < .73){
+                    ^~~
+In file included from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/basic_string.h:48:0,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/string:52,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/stdexcept:39,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/array:39,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/tuple:39,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/functional:54,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\178114eb00f372730a0b1c89d5ebb019\transformed\wpilibc-cpp-2022.1.1-headers/frc/TimedRobot.h:7,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\include/Robot.h:7,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:5:
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/string_view:492:5: note: candidate: template<class _CharT, class _Traits> constexpr bool std::operator<(std::basic_string_view<_CharT, _Traits>, std::__detail::__idt<std::basic_string_view<_CharT, _Traits> >)
+     operator< (basic_string_view<_CharT, _Traits> __x,
+     ^~~~~~~~
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/string_view:492:5: note:   template argument deduction/substitution failed:
+C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:18:20: note:   'units::unit_t<units::unit<std::ratio<1>, units::base_unit<std::ratio<0, 1>, std::ratio<0, 1>, std::ratio<1> > > >' is not derived from 'std::basic_string_view<_CharT, _Traits>'
+   if(timer.Get() < .73){
+                    ^~~
+In file included from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/basic_string.h:48:0,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/string:52,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/stdexcept:39,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/array:39,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/tuple:39,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/functional:54,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\178114eb00f372730a0b1c89d5ebb019\transformed\wpilibc-cpp-2022.1.1-headers/frc/TimedRobot.h:7,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\include/Robot.h:7,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:5:
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/string_view:486:5: note: candidate: template<class _CharT, class _Traits> constexpr bool std::operator<(std::basic_string_view<_CharT, _Traits>, std::basic_string_view<_CharT, _Traits>)
+     operator< (basic_string_view<_CharT, _Traits> __x,
+     ^~~~~~~~
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/string_view:486:5: note:   template argument deduction/substitution failed:
+C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:18:20: note:   'units::unit_t<units::unit<std::ratio<1>, units::base_unit<std::ratio<0, 1>, std::ratio<0, 1>, std::ratio<1> > > >' is not derived from 'std::basic_string_view<_CharT, _Traits>'
+   if(timer.Get() < .73){
+                    ^~~
+In file included from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/stl_algobase.h:67:0,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/char_traits.h:39,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/string:40,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/stdexcept:39,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/array:39,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/tuple:39,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/functional:54,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\178114eb00f372730a0b1c89d5ebb019\transformed\wpilibc-cpp-2022.1.1-headers/frc/TimedRobot.h:7,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\include/Robot.h:7,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:5:
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/stl_iterator.h:1148:5: note: candidate: template<class _Iterator> constexpr bool std::operator<(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorL>&)
+     operator<(const move_iterator<_Iterator>& __x,
+     ^~~~~~~~
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/stl_iterator.h:1148:5: note:   template argument deduction/substitution failed:
+C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:18:20: note:   'units::time::second_t {aka units::unit_t<units::unit<std::ratio<1>, units::base_unit<std::ratio<0, 1>, std::ratio<0, 1>, std::ratio<1> > > >}' is not derived from 'const std::move_iterator<_IteratorL>'
+   if(timer.Get() < .73){
+                    ^~~
+In file included from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/stl_algobase.h:67:0,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/char_traits.h:39,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/string:40,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/stdexcept:39,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/array:39,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/tuple:39,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/functional:54,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\178114eb00f372730a0b1c89d5ebb019\transformed\wpilibc-cpp-2022.1.1-headers/frc/TimedRobot.h:7,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\include/Robot.h:7,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:5:
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/stl_iterator.h:1142:5: note: candidate: template<class _IteratorL, class _IteratorR> constexpr bool std::operator<(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)
+     operator<(const move_iterator<_IteratorL>& __x,
+     ^~~~~~~~
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/stl_iterator.h:1142:5: note:   template argument deduction/substitution failed:
+C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:18:20: note:   'units::time::second_t {aka units::unit_t<units::unit<std::ratio<1>, units::base_unit<std::ratio<0, 1>, std::ratio<0, 1>, std::ratio<1> > > >}' is not derived from 'const std::move_iterator<_IteratorL>'
+   if(timer.Get() < .73){
+                    ^~~
+In file included from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/stl_algobase.h:67:0,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/char_traits.h:39,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/string:40,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/stdexcept:39,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/array:39,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/tuple:39,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/functional:54,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\178114eb00f372730a0b1c89d5ebb019\transformed\wpilibc-cpp-2022.1.1-headers/frc/TimedRobot.h:7,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\include/Robot.h:7,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:5:
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/stl_iterator.h:343:5: note: candidate: template<class _IteratorL, class _IteratorR> constexpr bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)
+     operator<(const reverse_iterator<_IteratorL>& __x,
+     ^~~~~~~~
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/stl_iterator.h:343:5: note:   template argument deduction/substitution failed:
+C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:18:20: note:   'units::time::second_t {aka units::unit_t<units::unit<std::ratio<1>, units::base_unit<std::ratio<0, 1>, std::ratio<0, 1>, std::ratio<1> > > >}' is not derived from 'const std::reverse_iterator<_Iterator>'
+   if(timer.Get() < .73){
+                    ^~~
+In file included from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/stl_algobase.h:67:0,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/char_traits.h:39,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/string:40,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/stdexcept:39,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/array:39,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/tuple:39,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/functional:54,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\178114eb00f372730a0b1c89d5ebb019\transformed\wpilibc-cpp-2022.1.1-headers/frc/TimedRobot.h:7,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\include/Robot.h:7,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:5:
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/stl_iterator.h:305:5: note: candidate: template<class _Iterator> constexpr bool std::operator<(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+     operator<(const reverse_iterator<_Iterator>& __x,
+     ^~~~~~~~
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/stl_iterator.h:305:5: note:   template argument deduction/substitution failed:
+C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:18:20: note:   'units::time::second_t {aka units::unit_t<units::unit<std::ratio<1>, units::base_unit<std::ratio<0, 1>, std::ratio<0, 1>, std::ratio<1> > > >}' is not derived from 'const std::reverse_iterator<_Iterator>'
+   if(timer.Get() < .73){
+                    ^~~
+In file included from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/utility:70:0,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/tuple:38,
+                 from C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/functional:54,
+                 from C:\Users\jec71b99\.gradle\caches\transforms-3\178114eb00f372730a0b1c89d5ebb019\transformed\wpilibc-cpp-2022.1.1-headers/frc/TimedRobot.h:7,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\include/Robot.h:7,
+                 from C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:5:
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/stl_pair.h:449:5: note: candidate: template<class _T1, class _T2> constexpr bool std::operator<(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)
+     operator<(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+     ^~~~~~~~
+C:\Users\Public\wpilib\2022\roborio\arm-frc2022-linux-gnueabi\usr\include\c++\7.3.0/bits/stl_pair.h:449:5: note:   template argument deduction/substitution failed:
+C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:18:20: note:   'units::time::second_t {aka units::unit_t<units::unit<std::ratio<1>, units::base_unit<std::ratio<0, 1>, std::ratio<0, 1>, std::ratio<1> > > >}' is not derived from 'const std::pair<_T1, _T2>'
+   if(timer.Get() < .73){
+                    ^~~
+C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp: In member function 'virtual void Robot::TeleopPeriodic()':
+C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:27:32: error: 'class frc::XboxController' has no member named 'GetY'; did you mean 'GetPOV'?
+   Drive(.5*-m_driverController.GetY(frc::GenericHID::JoystickHand::kLeftHand),.5*m_driverController.GetY(frc::GenericHID::JoystickHand::kRightHand));
+                                ^~~~
+                                GetPOV
+C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:27:54: error: 'frc::GenericHID::JoystickHand' has not been declared
+   Drive(.5*-m_driverController.GetY(frc::GenericHID::JoystickHand::kLeftHand),.5*m_driverController.GetY(frc::GenericHID::JoystickHand::kRightHand));
+                                                      ^~~~~~~~~~~~
+C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:27:101: error: 'class frc::XboxController' has no member named 'GetY'; did you mean 'GetPOV'?
+   Drive(.5*-m_driverController.GetY(frc::GenericHID::JoystickHand::kLeftHand),.5*m_driverController.GetY(frc::GenericHID::JoystickHand::kRightHand));
+                                                                                                     ^~~~
+                                                                                                     GetPOV
+C:\Users\jec71b99\Documents\2022 FRC C++ robot code\src\main\cpp\Robot.cpp:27:123: error: 'frc::GenericHID::JoystickHand' has not been declared
+   Drive(.5*-m_driverController.GetY(frc::GenericHID::JoystickHand::kLeftHand),.5*m_driverController.GetY(frc::GenericHID::JoystickHand::kRightHand));
+                                                                                                                           ^~~~~~~~~~~~
+
+Finished compileFrcUserProgramDebugExecutableFrcUserProgramCpp, see full log file:///C:/Users/jec71b99/Documents/2022%20FRC%20C++%20robot%20code/build/tmp/compileFrcUserProgramDebugExecutableFrcUserProgramCpp/output.txt.

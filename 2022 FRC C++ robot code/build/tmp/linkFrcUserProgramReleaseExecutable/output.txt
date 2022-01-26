@@ -1,0 +1,4 @@
+See file:///C:/Users/jec71b99/Documents/2022%20FRC%20C++%20robot%20code/build/tmp/linkFrcUserProgramReleaseExecutable/output.txt for all output for linkFrcUserProgramReleaseExecutable.
+linking frcUserProgram successful.
+
+Finished linkFrcUserProgramReleaseExecutable, see full log file:///C:/Users/jec71b99/Documents/2022%20FRC%20C++%20robot%20code/build/tmp/linkFrcUserProgramReleaseExecutable/output.txt.
